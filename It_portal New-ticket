@@ -1,0 +1,208 @@
+HTML:
+
+<div class="container mt-3 maindiv footercontent" style="border-radius: 25px 25px 0 0;">
+
+  <div style="padding:5px;">
+    <div class="row">
+      <div class="pt-3 offset-md-1 col-md-10 text-center" style="box-shadow: 0 0 5px #1ca7dd; background: linear-gradient(to right, #447ff7, #0cb5d2); border-radius: 25px 25px 0 0;">
+        <h2 style="color:white; font-weight: 500; font-size: 26px;">New Ticket</h2>
+      </div>
+
+      <div class="pt-3 offset-md-1 col-md-10" style="border-radius: 0 0 25px 25px; box-shadow: 0 0 5px #1ca7dd; padding-left: 3%; padding-right: 3%;">
+
+        <div class="mb-4">
+
+          <div class="side-by-side">
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Reference <span style="color:red;">*</span></label> <br />
+              <select class="inputclass" style="width: 100%; border: 1px solid #1ca7dd; padding: 8px 0px; border-radius: 2px;">
+                <option></option>
+                <option>Inward Entry</option>
+                <option>Calibration</option>
+              </select>
+            </span>
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Classification <span style="color:red;">*</span></label> <br />
+              <select class="inputclass" style="width: 100%; border: 1px solid #1ca7dd; padding: 8px 0px; border-radius: 2px;">
+                <option></option>
+                <option>Major</option>
+                <option>Standard</option>
+                <option>Minor</option>
+                <option>Emergency</option>
+              </select>
+            </span>
+
+          </div>
+
+          <div class="side-by-side">
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Category <span style="color:red;">*</span></label> <br />
+              <select class="inputclass" style="width: 100%; border: 1px solid #1ca7dd; padding: 8px 0px; border-radius: 2px;">
+                <option></option>
+                <option>Servers</option>
+                <option>Network</option>
+                <option>Security</option>
+                <option>Inhouse Development</option>
+                <option>SAP</option>
+                <option>Software</option>
+                <option>Desktop / Laptop</option>
+                <option>Printers</option>
+              </select>
+            </span>
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Type <span style="color:red;">*</span></label> <br />
+              <select class="inputclass" style="width: 100%; border: 1px solid #1ca7dd; padding: 8px 0px; border-radius: 2px;">
+                <option></option>
+                <option>Servers Issue</option>
+                <option>Network Error</option>
+                <option>Security Issue</option>
+                <option>Inhouse Development Problem</option>
+                <option>SAP Problem</option>
+                <option>Software Issue</option>
+                <option>Desktop / Laptop Problem</option>
+                <option>Printers Issue</option>
+              </select>
+            </span>
+
+          </div>
+
+          <div class="side-by-side">
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Describe the change being requested <span style="color:red;">*</span></label> <br />
+              <input type="text" class="p-2 inputclass" required>
+            </span>
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Reason for the change <span style="color:red;">*</span></label> <br />
+              <input type="text" class="p-2 inputclass" required>
+            </span>
+
+          </div>
+
+          <div class="side-by-side">
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Impact of not doing this change <span style="color:red;">*</span></label> <br />
+              <input type="text" class="p-2 inputclass" required>
+            </span>
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Change triggered by <span style="color:red;">*</span></label> <br />
+              <select class="inputclass" style="width: 100%; border: 1px solid #1ca7dd; padding: 8px 0px; border-radius: 2px;">
+                <option></option>
+                <option>Compliance</option>
+                <option>Commercial</option>
+                <option>Statutory</option>
+                <option>Legal</option>
+                <option>Business Requirements</option>
+                <option>Efficiency / Productivity</option>
+              </select>
+            </span>
+
+          </div>
+
+          <div class="side-by-side">
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Benefit of implementing the change <span style="color:red;">*</span></label> <br />
+              <input type="text" class="p-2 inputclass" required>
+            </span>
+
+            <span class="item">
+              <label style="font-size: 20px; color: #1ca7dd;" class="p-1">Expected date of completion <span style="color:red;">*</span></label> <br />
+              <input type="date" class="p-2 inputclass" required>
+            </span>
+
+          </div>
+
+          <div class="text-center mt-4">
+            <button type="submit" class="btn" style="color:white; background: linear-gradient(to right, #447ff7, #0cb5d2);border:none;">Submit</button>
+          </div>
+
+        </div>
+
+        <div>
+        </div>
+
+      </div>
+    </div>
+
+<!--    <div class="modal blue-alert" tabindex="-1" *ngIf="showBlueAlert">
+      <div class="modal-dialog">
+        <div class="modal-content p-2">
+          <div class="modal-body">
+            <div class="icon-message-container">
+              <span>
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="error" class="mat-icon"></mat-icon>
+              </span>
+              <span class="message">{{message}}</span>
+            </div>
+            <button (click)="toggleBlueAlert()" type="button" class="btn btn-primary mb-3 mt-3" style="width:20%;height:30px;margin-left:65%!important;font-size:12px;">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" *ngIf="SuccessAlert">
+      <div class="modal-dialog">
+        <div class="modal-content p-2">
+          <div class="modal-body">
+            <div class="icon-message-container">
+              <span>
+                <mat-icon style="margin-left: 4%;" aria-hidden="false" aria-label="Example home icon" class="mat-icon">check_circle</mat-icon>
+              </span>
+              <div class="message">{{message}}</div>
+            </div>
+            <button (click)="SuccessAlertClose()" type="button" class="btn btn-primary mb-3 mt-3" style="width:20%;height:30px;margin-left:65%!important;font-size:12px;">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+  </div>
+
+</div>
+
+
+
+CSS:
+
+:host {
+  color: rgb(10, 10, 10);
+}
+
+.maindiv {
+  margin-bottom: 6%;
+}
+
+table tbody tr {
+  border-bottom: transparent;
+}
+
+.inputclass {
+  font-size: 20px;
+  width: 100%;
+  border: 1px solid #1ca7dd;
+  color: black;
+  border-radius: 2px;
+  outline-color: #1ca7dd;
+  margin-top:1%;
+}
+
+.side-by-side {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed */
+}
+
+.item {
+  width: 48%;
+}
+
+label{
+    margin-top:2%;
+}
